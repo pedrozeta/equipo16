@@ -8,19 +8,21 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-    <link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amaranth:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="./img/fuego-favicon.png" type="image/x-icon">
     <title>adoradores del fuego</title>
 </head>
 <body>
     <header>
         <div class="header">
+            <input type="checkbox" id="sidemenu" class="sidemenu">
+            <label for="sidemenu" class="hamb"><span class="hambline"></span></label>
         <nav>
             <ul>
                 <li><a href="#">inicio</a></li>
                 <li><a href="./pages/asando.html">asando</a></li>
-                <li><a href="./pages/al-disco.html">al disco</a></li>
+                <li><a href="#">al disco</a></li>
                 <li><a href="#">tradicional</a></li>
                 <li><a href="#">tips</a></li>
                 <li><a href="./pages/login.html">acceso</a></li>
@@ -29,6 +31,7 @@
         <h1>Adoradores del fuego</h1>
     </div>
     </header>
+    <main>
     <div class="containerbh">
         <div class="container-text">
         <p>Prender el fuego, preparar lo necesario, cocinarlo y llevarlo a la mesa.</p>
@@ -51,31 +54,31 @@
             <img src="./img/ASADOR.png" alt="asado al asador" class="img-card">
             </div>
             <div class="card-button">
-                <a href="./pages/asando.html">asando</a>
+                <a class="btn" href="./pages/asando.html">asando</a>
             </div>
             <div class="card-text">
                 <p>
-                    Acá voy a colocar un breve texto explicativo
+                    Encender el fuego, preparar las brasas, salar la carne. El ritual de la picada. La ceremonia previa para llevar a la mesa unas carnes asadas espectaculares. Las mejores maneras de preparar el asado.
                 </p>
-                <p>
-                    Desde acá planeo ir a una p+agina que tiene una lista de opciones y de ahí a cualquiera de ellas.
-                </p>
+            </div>
+            <div class="fcard">
+
             </div>
         </div>
         <div class="card card2">
             <div class="card-img">
-           <img src="./img/DISCO.png" alt="cocinqando al disco" class="img-card">
+           <img src="./img/DISCO.png" alt="cocinando al disco" class="img-card">
             </div>
             <div class="card-button">
-                <a href="#">al disco</a>
+                <a class="btn" href="#">al disco</a>
             </div>
             <div class="card-text">
                 <p>
-                    Acá voy a colocar un breve texto explicativo
+                    El noble artefacto para arar la tierra nos permite también lucirnos, preparar unos manjares espectaculares. Echamos mano de todo lo que tengamos en la cocina para preparar los mejores platos.
                 </p>
-                <p>
-                    Desde acá planeo ir a una p+agina que tiene una lista de opciones y de ahí a cualquiera de ellas.
-                </p>
+            </div>
+            <div class="fcard">
+                
             </div>
         </div>
     </div>
@@ -86,15 +89,15 @@
             <img src="./img/DESMECHADO.png" alt="bondiola desmechada" class="img-card">
             </div>
             <div class="card-button">
-                <a href="#">tradicional</a>
+                <a class="btn" href="#">tradicional</a>
             </div>
             <div class="card-text">
                 <p>
-                    Acá voy a colocar un breve texto explicativo
+                    No solo funcionamos a leña o carbón; también nos animamos a la cocina. Ya sea porque está lloviendo, hace frío o simplemente esta vez usamos la cocina. Los mejores platos tradicionales y, por qué no, postres.
                 </p>
-                <p>
-                    Desde acá planeo ir a una p+agina que tiene una lista de opciones y de ahí a cualquiera de ellas.
-                </p>
+            </div>
+            <div class="fcard">
+                
             </div>
         </div>
         <div class="card card4">
@@ -102,15 +105,15 @@
             <img src="./img/SALMUERA.png" alt="salmuera" class="img-card">
             </div>
             <div class="card-button">
-                <a href="#">tips</a>
+                <a class="btn" href="#">tips</a>
             </div>
             <div class="card-text">
                 <p>
-                    Acá voy a colocar un breve texto explicativo
+                    ¿Olvidaste comprar algo? ¿Te falta algún adherezo? ¿Querés cambiar la manera de preparar tus comidas? En este apartado te damos algunos consejos. Vas a sorprenderte con "los secretos mejor guardados del chef". 
                 </p>
-                <p>
-                    Desde acá planeo ir a una p+agina que tiene una lista de opciones y de ahí a cualquiera de ellas.
-                </p>
+            </div>
+            <div class="fcard">
+                
             </div>
         </div>
     </div>
@@ -119,8 +122,28 @@
             <p>Si alguno de los artículos de esta página te gusta, podés dejar tu comentario!</p>
         </div>
     </div>
+</main>
     <footer>
-
+        <div class="div left">
+            <a href="#">sobre nosotros</a>
+        </div>
+        <div class="div center">
+            <a href="mailto:contacto@afuego.com" aria-label="contacto" class="footer-link" target="_blank">contáctanos</a>
+        </div>
+        <div class="div social right">
+            <div class="social-links">
+                <div class="social-title">
+                    <h3>Síguenos en las redes</h3>
+                </div>
+                <br>
+                <div class="social-image">
+                    <a href="https://web.whatsapp.com/" target="_blank"><img src="./img/whatsapp (1).png" alt="watsapp"></a>
+                    <a href="https://www.facebook.com/" target="_blank"><img src="./img/facebook (1).png" alt="facebook"></a>
+                    <a href="https://www.instagram.com/" target="_blank"><img src="./img/instagram (1).png" alt="instagram"></a>
+                    <a href="https://x.com" target="_blank"><img src="./img/medios-de-comunicacion-social.png" alt="x"></a>
+            </div>
+            </div>
+        </div>
     </footer>
 </body>
 </html>

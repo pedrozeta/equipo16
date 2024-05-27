@@ -16,10 +16,11 @@ header {
     width: 100%;
     height: 100%;
     background-color: rgba(4, 217, 206, 0.1);
+    overflow: hidden;
 }
 
 header h1 {
-    /* font-family: "Amaranth", sans-serif; */
+   /font-family: "Amaranth", sans-serif;
     font-weight: 400;
     font-style: italic;
     font-size: 150px;
@@ -65,15 +66,18 @@ nav ul li a {
 nav ul li a:hover {
     color: rgb(245, 156, 120);
     background: rgba(245, 156, 120, 0.3);
-    animation: animate__zoomIn 5s;
 }
-
 
 nav ul li a:active {
     color: rgb(245, 156, 120);
 }
 
 /*CUERPO DE LA PAGINA*/
+
+main {
+    overflow: hidden;
+    background-color: #d4c8c8;
+}
 
 .containerbh {
     width: 100%;
@@ -90,14 +94,12 @@ nav ul li a:active {
     text-align: center;
 }
 
-
-
 .containerbh p { 
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: italic;
     font-size: 25px;
-    color: #260101;
+    color: #000;
 }
 
 .container-title {
@@ -115,7 +117,7 @@ nav ul li a:active {
     font-weight: 400;
     font-style: italic;
     font-size: 30px;
-    color: #260101;
+    color: #000;
 }
 
 .containerbf {
@@ -126,26 +128,28 @@ nav ul li a:active {
     font-weight: 400;
     font-style: italic;
     font-size: 25px;
-    color: #260101;
+    color: #000;
 }
 
 .container {
-    width: 100%;
+    width: 90%;
     height: 700px;
+    margin-left: auto;
+    margin-right: auto;
     background-color: #d4c8c8;
     display: flex;
     flex-direction: row;
-    flex-wrap: nowrap;
     justify-content: center;
     column-gap: normal;
+    overflow: hidden;
 }
 
 .card {
-    width: 500px;
+    width: 35%;
     height: 550px;
     background-color: rgba(243, 237, 237, 0.2);
     border-radius: 10px;
-    
+    overflow: hidden;
 }
 
 .card1, .card2 {
@@ -157,11 +161,11 @@ nav ul li a:active {
 }
 
 .card1, .card3 {
-    margin-right: 150px;
+    margin-right: 6%;
 }
 
 .card2, .card4 {
-    margin-left: 150px;
+    margin-left: 6%;
 }
 
 .img-card {
@@ -171,28 +175,49 @@ nav ul li a:active {
 }
 
 .card .card-button {
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
     width: 90%;
     height: 55px;
-    border-radius: 10px;
-    background: rgba(69, 60, 60, 1);
+    margin-left: auto;
+    margin-right: auto;
+    /*border-radius: 10px;
+    background: rgba(69, 60, 60, 1);*/
+    display: flex;
+    align-items: center;
 }
 
-.card .card-button a {
+.card .card-button .btn {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
+    background-color: rgba(69, 60, 60, 1);
     display: inline-block;
     text-decoration: none;
     border-radius: 10px;
-    text-align: center;
     padding-top: 15px;
-    width: 450px;
+    padding-bottom: 15px;
+    text-align: center;
+    width: 550px;
     color: #fff;
+    margin: 25px auto;
+}
 
+.card-text {
+    margin: 25px;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    border-radius: 10px;
+}
+
+.card-text p {
+    text-indent: 1em;
+}
+
+.card .fcard {
+    width: 100%;
+    height: 100px;
+    background: #d4c8c8;
 }
 
 .container-list {
@@ -257,102 +282,100 @@ article {
     margin-top: 100px;
 }
 
-.container-login {
-    width: 100%;
-    height: 700px;
-    background-color: rgba(243, 237, 237, 0.2) ;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    column-gap: normal; 
+.article-title {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding: 15px;
 }
 
-.access {
-    width: 900px;
-    height: 500px;
-    background-color: rgba(243, 237, 237, 0.2);
-    border-radius: 10px;
-    margin-top: 100px;
+.article-title h2 {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 25px;
+    color: #000;
+}
+
+/*LOGIN*/
+
+.background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    z-index: -1;
+    background-image: url(../img/600204640_197535310_1706x960.png);
+}
+
+form {
+    padding: 20px;
+    background: rgba(185, 162, 115, 0.35);
     display: flex;
     flex-direction: column;
-    align-items: center;
-}
-
-.login {
-    width: 400px;
-    height: 360px;
-    background: rgba(69, 60, 60, 0.5);
+    gap: 10px;
+    max-width: 400px;
+    width: 90%;
     border-radius: 10px;
-    margin: auto;
-    padding: 20px 50px;
-    color: #260101;
+    margin: 200px;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 20px;
 }
 
-.login h3 {
-    margin: 0;
+.login-container {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 30px;
     text-align: center;
-    height: 40px;
-    margin-bottom: 30px;
-    border-bottom: 2px solid rgba(69, 60, 60, 0.9);
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
+    width: 300px;
+    margin: 30px auto;
+    padding: 20px;
 }
 
-.form-acount {
-    width: 100%;
-    border: 2px solid rgba(69, 60, 60, 0.9);
-    margin-bottom: 15px;
-    padding-top: 10px;
-    border-radius: 5px;
-    padding-bottom: 10px;
-    background: rgba(69, 60, 60, 0.1);
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    color: #fff;
+.form-account input{
+    border: none;
+    border-radius: 15px;
+    padding: 10px
 }
 
 .remember {
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    margin-top: 10px;
+    border-radius: 15px;
+}
+
+.form-account button {
+    width: 300px;
+    padding: 10px;
+    background-color: #8aa1ba4e;
+    color: #000000;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
     font-size: 20px;
-    color: #260101;
-    padding-left: 15px;
-    padding-bottom: 15px;
 }
 
-.button {
-    width: 100%;
-    height: 48px;
-    border: 2px solid rgba(69, 60, 60, 1);
-    border-radius: 5px;
-    margin-bottom: 15px;
-    background: rgba(69, 60, 60, 0.6);
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
-    color: #fff;
-}
-
-.login p {
-    height: 40px;
-    text-align: center;
-    border-bottom: 2px solid rgba(69, 60, 60, 1);
-}
-
-.login a {
-    color: #260101;
+.form-account .enlaces .a {
     text-decoration: none;
-    font-family: "Roboto", sans-serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 20px;
+    color: aqua;
+}
+
+.form-account button:hover {
+    background-color: #a88968;
 }
 
 /*FOOTER*/
@@ -360,5 +383,207 @@ article {
 footer {
     width: 100%;
     height: 350px;
-    background: rgba(69, 60, 60, 1);
+    background: rgb(43, 42, 42);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+footer .left {
+    width: 33%;
+    height: 100%;
+    float: left;
+    position: relative;
+
+}
+
+footer .left a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #fff;
+    font-size: 20px;
+}
+
+footer .center {
+    width: 34%;
+    height: 100%;
+    position: relative;
+}
+
+footer .center a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-decoration: none;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #fff;
+    font-size: 20px;
+}
+
+footer .right {
+    width: 33%;
+    height: 100%;
+    float: right;
+    position: relative;
+}
+
+footer .social .social-links {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: inline-block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+footer .social .social-links .social-title {
+    width: 200px;
+}
+
+footer .social .social-links .social-title h3 {
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    color: #fff;
+    font-size: 20px;
+}
+
+footer .social .social-image {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+footer .social .social-links img {
+    width: 30px;
+    height: 30px;
+    display: inline;
+    padding: 5px;
+}
+
+/*MENU HAMBURGUESA*/
+
+.sidemenu {
+    display: none;
+}
+
+@media (max-width: 1200px) {
+
+.hamb {
+    cursor: pointer;
+    float: right;
+    padding: 40px 20px;
+}
+
+.hambline {
+    background: #fff;
+    display: block;
+    height: 2px;
+    position: relative;
+    width: 24px;
+}
+
+.hambline::before,
+.hambline::after {
+    background: #fff;
+    content:'';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+}
+
+.hambline::before {
+    top: 5px;
+}
+
+.hambline::after {
+    top: -5px;
+}
+
+nav {
+    display: none;
+}
+
+.sidemenu:checked ~ nav {
+    max-height: 100%;
+}
+
+.sidemenu:checked ~ .hamb .hambline {
+    background: transparent;
+}
+
+.sidemenu:checked ~ .hamb .hambline::before {
+    transform: rotate(-45deg);
+    top: 0;
+}
+
+.sidemenu:checked ~ .hamb .hambline::after {
+    transform: rotate(45deg);
+    top: 0;
+}
+
+nav {
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+    }
+
+nav .ul li {
+        float: left;
+    }
+
+    footer {
+        width: 100%;
+        height: 350px;
+        background: rgb(43, 42, 42);
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        flex-wrap: wrap;
+    }
+
+    footer .left {
+        width: 50%;
+        height: 50%;
+        float: left;
+        position: relative;
+    }
+
+    footer .center {
+        width: 50%;
+        height: 50%;
+        position: relative;
+    }
+
+    footer .right {
+        width: 100%;
+        height: 50%;
+        position: relative;
+    }
+
+    footer .social .social-links {
+        position: absolute;
+        top: 25%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        display: inline-block;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+
 }
